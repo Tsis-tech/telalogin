@@ -1,0 +1,6 @@
+com\example\auth\service\UsuarioService.class
+com\example\auth\config\SecurityConfig.class
+com\example\auth\model\Usuario.class
+com\example\auth\repository\UsuarioRepository.class
+com\example\auth\controller\AuthController.class
+com\example\auth\AuthApplication.class

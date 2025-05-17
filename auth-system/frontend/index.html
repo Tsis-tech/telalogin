@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    <title>Sistema de Autenticação</title>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+    <div class="container">
+        <div class="auth-container">
+            <div class="form-container">
+                <!-- Form de Login -->
+                <form id="loginForm" class="form">
+                    <h2>Login</h2>
+                    <div class="form-group">
+                        <input type="email" id="loginEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="loginSenha" required>
+                        <label>Senha</label>
+                    </div>
+                    <button type="submit" class="btn">Entrar</button>
+                    <p class="switch-form">
+                        Não tem uma conta? <a href="#" onclick="toggleForms()">Registre-se</a>
+                    </p>
+                </form>
+
+                <!-- Form de Registro -->
+                <form id="registroForm" class="form hidden">
+                    <h2>Registro</h2>
+                    <div class="form-group">
+                        <input type="text" id="registroNome" required>
+                        <label>Nome</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="registroEmail" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" id="registroSenha" required>
+                        <label>Senha</label>
+                        <div class="password-strength"></div>
+                    </div>
+                    <button type="submit" class="btn">Registrar</button>
+                    <p class="switch-form">
+                        Já tem uma conta? <a href="#" onclick="toggleForms()">Faça login</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
